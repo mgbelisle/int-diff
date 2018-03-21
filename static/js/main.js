@@ -1,10 +1,6 @@
-function matches(id) {
-    return new Set($(id).val().match(/(\d+)/g));
-}
-
 function update() {
-    let matches1 = matches('#textarea-1');
-    let matches2 = matches('#textarea-2');
+    let matches1 = new Set($('#textarea-1').val().match(/(\d+)/g));;
+    let matches2 = new Set($('#textarea-2').val().match(/(\d+)/g));;
     $('#textarea-1-readonly').val([...matches1].filter(x => !matches2.has(x)));
     $('#textarea-2-readonly').val([...matches2].filter(x => !matches1.has(x)));
 }
