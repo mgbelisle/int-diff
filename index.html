@@ -8,29 +8,33 @@
     <link rel="stylesheet" type="text/css" href="static/css/styles.css">
   </head>
   <body>
-    <main class="container my-5">
-      <div class="row">
-	<div class="col col-6">
-	  <h1>Item #1</h1>
-	  <textarea id="textarea-1" class="form-control">
-	  </textarea>
+    <main class="container">
+      <h1 class="mt-5">Thing for Andrew</h1>
+      <p class="mt-4">Paste your documents into these text boxes and it will show you the integers that appear in one box but not the other.</p>
+      <div class="container px-0">
+	<div class="row mt-4">
+	  <div class="col col-6">
+	    <h2>Item #1</h2>
+	    <textarea id="textarea-1" class="form-control">
+	    </textarea>
+	  </div>
+	  <div class="col col-6">
+	    <h2>Integers not in #2</h2>
+	    <textarea id="textarea-1-readonly" class="form-control" readonly>
+	    </textarea>
+	  </div>
 	</div>
-	<div class="col col-6">
-	  <h1>Numbers not in #2</h1>
-	  <textarea id="textarea-1-readonly" class="form-control" readonly>
-	  </textarea>
-	</div>
-      </div>
-      <div class="row mt-4">
-	<div class="col col-6">
-	  <h1>Item #2</h1>
-	  <textarea id="textarea-2" class="form-control">
-	  </textarea>
-	</div>
-	<div class="col col-6">
-	  <h1>Numbers not in #1</h1>
-	  <textarea id="textarea-2-readonly" class="form-control" readonly>
-	  </textarea>
+	<div class="row mt-4">
+	  <div class="col col-6">
+	    <h2>Item #2</h2>
+	    <textarea id="textarea-2" class="form-control">
+	    </textarea>
+	  </div>
+	  <div class="col col-6">
+	    <h2>Integers not in #1</h2>
+	    <textarea id="textarea-2-readonly" class="form-control" readonly>
+	    </textarea>
+	  </div>
 	</div>
       </div>
     </main>
